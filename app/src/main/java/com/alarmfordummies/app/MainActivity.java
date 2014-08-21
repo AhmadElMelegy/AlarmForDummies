@@ -103,6 +103,7 @@ public class MainActivity extends FragmentActivity implements TimePickerDialog.O
                             i.putExtra(AlarmClock.EXTRA_MESSAGE, "Alarm For Dummies");
                             i.putExtra(AlarmClock.EXTRA_HOUR, tempStartHour);
                             i.putExtra(AlarmClock.EXTRA_MINUTES, tempStartMinute);
+                            i.putExtra(AlarmClock.EXTRA_SKIP_UI,true);
                             startActivity(i);
                             endTimeInMinutes -= frequency;
                             try {
